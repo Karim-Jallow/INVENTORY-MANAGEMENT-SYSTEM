@@ -16,7 +16,6 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 
 // Add services for Razor Pages
 builder.Services.AddRazorPages();
-
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
@@ -24,7 +23,7 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseMigrationsEndPoint();
+    app.UseDeveloperExceptionPage(); // Enable detailed error pages
 }
 else
 {
