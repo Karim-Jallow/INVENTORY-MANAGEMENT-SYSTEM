@@ -1,0 +1,26 @@
+<h2>Manage Stock Movement</h2>
+<form asp-action="StockMovement" method="post">
+    <div class="form-group">
+        <label for="ProductId">Select Product</label>
+        <select class="form-control" id="ProductId" name="ProductId">
+            @foreach (var product in Model)
+            {
+                <option value="@product.ProductId">@product.ProductName</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Quantity">Quantity</label>
+        <input type="number" class="form-control" id="Quantity" name="Quantity" />
+    </div>
+    <div class="form-group">
+        <label for="MovementType">Movement Type</label>
+        <select class="form-control" id="MovementType" name="MovementType">
+            <option value="Sales">Sales</option>
+            <option value="Swap">Swap</option>
+            <option value="Replacement">Replacement</option>
+            <option value="Arrival">Arrival</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

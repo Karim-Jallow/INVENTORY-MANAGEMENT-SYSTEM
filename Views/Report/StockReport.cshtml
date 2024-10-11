@@ -1,0 +1,62 @@
+
+
+@{
+    ViewData["Title"] = "Stock Report";
+}
+
+<h2>Stock Report</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product Name</th>
+            @* <th>Current Stock</th> *@
+            <th>Stock Balance</th>
+            <th>Reorder Level</th>
+            <th>Stock Movements</th> <!-- New Column -->
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var product in Model)
+    {
+        <tr>
+            <td>@product.ProductName</td>
+            @* <td>@product.CurrentStock</td> *@
+            <td>@product.StockBalance</td>
+            <td>@product.ReorderLevel</td>
+            <td>
+                <ul>
+                @foreach (var movement in product.StockMovements)
+                {
+                    <li>
+                        @movement.MovementType: @movement.Quantity (Date: @movement.MovementDate.ToShortDateString()) @movement.EnteredBy
+                    </li>
+                }
+                </ul>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+</style>
