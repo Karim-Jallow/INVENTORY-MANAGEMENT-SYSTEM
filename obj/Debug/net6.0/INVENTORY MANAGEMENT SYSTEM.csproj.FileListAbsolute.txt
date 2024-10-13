@@ -299,3 +299,5 @@
 /Users/abdoukarimjallow/Desktop/INVENTORY MANAGEMENT SYSTEM/bin/Debug/net6.0/out/appsettings.json
 /Users/abdoukarimjallow/Desktop/INVENTORY MANAGEMENT SYSTEM/bin/Debug/net6.0/out/INVENTORY MANAGEMENT SYSTEM.deps.json
 /Users/abdoukarimjallow/Desktop/INVENTORY MANAGEMENT SYSTEM/bin/Debug/net6.0/out/INVENTORY MANAGEMENT SYSTEM.runtimeconfig.json
+/Users/abdoukarimjallow/Desktop/INVENTORY MANAGEMENT SYSTEM/bin/Debug/net6.0/Npgsql.dll
+/Users/abdoukarimjallow/Desktop/INVENTORY MANAGEMENT SYSTEM/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
