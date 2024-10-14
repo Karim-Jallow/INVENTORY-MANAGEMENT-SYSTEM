@@ -12,7 +12,7 @@ using TVET_MANAGEMENT_SYSTEM.Data;
 namespace INVENTORY_MANAGEMENT_SYSTEM.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241013014600_InitialCreate")]
+    [Migration("20241014134521_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
