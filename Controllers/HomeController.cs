@@ -76,7 +76,7 @@ public class HomeController : Controller
                 EnteredBy = enteredBy,
                 Quantity = quantity,
                 MovementType = movementType,
-                MovementDate = DateTime.Now // Updated this line
+                MovementDate = DateTime.UtcNow // Updated this line
                 
             });
 
